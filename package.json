@@ -1,0 +1,12 @@
+{
+  "name": "spaceship-asteroid-dodger",
+  "version": "1.0.0",
+  "description": "A spaceship asteroid dodging game",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -c-1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+} 
