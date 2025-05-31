@@ -8,8 +8,8 @@ class Asteroid {
         this.setSizeProperties();
         
         // Movement
-        this.vx = randomFloat(-1, 1);
-        this.vy = randomFloat(1, 3);
+        this.vx = randomFloat(-0.5, 0.5);
+        this.vy = randomFloat(0.5, 1.5);
         this.rotation = 0;
         this.rotationSpeed = randomFloat(-0.05, 0.05);
         

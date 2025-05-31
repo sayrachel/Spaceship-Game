@@ -304,9 +304,9 @@ class Game {
         const newLevel = Math.floor(this.score / 1000) + 1;
         if (newLevel > this.level) {
             this.level = newLevel;
-            // Increase spawn rate and max asteroids
-            this.asteroidSpawnRate = Math.max(60, 120 - (this.level * 10));
-            this.maxAsteroids = Math.min(15, 8 + this.level);
+            // Start with very easy settings and very gradual progression
+            this.asteroidSpawnRate = Math.max(60, 240 - (this.level * 6)); // Start at 240 frames between spawns
+            this.maxAsteroids = Math.min(15, 3 + Math.floor(this.level / 3)); // Start with 3 max asteroids
         }
     }
     
